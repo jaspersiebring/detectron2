@@ -45,7 +45,7 @@ def get_parser():
     parser = argparse.ArgumentParser(description="Detectron2 demo for builtin configs")
     parser.add_argument(
         "--config-file",
-        default=r"/home/jsieb/Downloads/repos/drone2go/scripts/retinanet_ambulance.yaml",
+        default=r"/home/appuser/detectron2_repo/projects/Drone2Go/configs/retinanet_ambulance.yaml",
         metavar="FILE",
         help="path to config file",
     )
@@ -64,7 +64,7 @@ def get_parser():
     parser.add_argument(
         "--confidence-threshold",
         type=float,
-        default=0.5,
+        default=0.3,
         help="Minimum score for instance predictions to be shown",
     )
     parser.add_argument(
