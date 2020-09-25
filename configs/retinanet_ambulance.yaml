@@ -1,0 +1,10 @@
+_BASE_: "/home/appuser/detectron2_repo/configs/COCO-Detection/retinanet_R_50_FPN_3x.yaml"
+MODEL:
+  WEIGHTS: "/tmp/.X11-unix/model_ambulance.pth"
+  ROI_HEADS:
+    NUM_CLASSES : 1
+TEST:
+  EXPECTED_RESULTS: [["bbox", "AP", 44.45, 0.02]]
+INPUT:
+  CROP:
+    ENABLED: True
